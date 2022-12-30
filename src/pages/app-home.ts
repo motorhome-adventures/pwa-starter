@@ -20,6 +20,11 @@ export class AppHome extends LitElement {
     return [
       styles,
       css`
+      h2 {
+       color: #ff0024;
+       text-align: center;
+      }
+
       #welcomeBar {
         display: flex;
         justify-content: center;
