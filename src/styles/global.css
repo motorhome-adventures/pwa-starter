@@ -5,8 +5,8 @@
 */
 :root {
   --font-family: Helvetica, Arial, sans-serif;
-  --first-color: red;
-  --second-color: blue;
+  --background-color: rgb(13, 105, 128);
+
 }
 
 html, body {
@@ -15,12 +15,13 @@ html, body {
   margin: 0;
 }
 
+
 @media (prefers-color-scheme: dark) {
 
   html,
   body {
-    background-color: #181818;
-    color: white;
+    background-color: #0d6980;
+    color: white ;
   }
 }
 
@@ -28,7 +29,8 @@ html, body {
 
   html,
   body {
-    background-color: white;
-    color: black;
+    background-color: #0d6980;
+    color: white ;
+
   }
 }

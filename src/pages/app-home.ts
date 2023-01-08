@@ -14,16 +14,12 @@ export class AppHome extends LitElement {
 
   // For more information on using properties and state in lit
   // check out this link https://lit.dev/docs/components/properties/
-  @property() message = 'Welcome to Motorhome Checklists';
+  @property() message = 'Welcome to Motorhome Checklists!';
 
   static get styles() {
     return [
       styles,
       css`
-      h2 {
-       color: #ff0024;
-       text-align: center;
-      }
 
       #welcomeBar {
         display: flex;
@@ -36,6 +32,7 @@ export class AppHome extends LitElement {
       #infoCard {
         padding: 18px;
         padding-top: 0px;
+
       }
 
       pwa-install {
@@ -44,9 +41,23 @@ export class AppHome extends LitElement {
         right: 16px;
       }
 
+      sl-card {
+        --border-width: 0px;
+      }
+
       sl-card::part(footer) {
         display: flex;
         justify-content: flex-end;
+        background: var(--background-color);
+      }
+
+      sl-card::part(header) {
+        background: var(--background-color);
+      }
+
+      sl-card::part(body) {
+        background: var(--background-color);
+
       }
 
       @media(min-width: 750px) {
@@ -102,7 +113,7 @@ export class AppHome extends LitElement {
             </div>
 
             <p>
-              For more information on the PWABuilder pwa-starter, check out the
+              When you set off
               <a href="https://github.com/pwa-builder/pwa-starter/wiki/Getting-Started">
                 Documentation on Github</a>.
             </p>

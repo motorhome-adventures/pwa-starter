@@ -4,7 +4,7 @@ import { property, customElement } from 'lit/decorators.js';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 @customElement('app-header')
 export class AppHeader extends LitElement {
-  @property({ type: String }) title = 'Motorhoming Adventures Checklists';
+  @property({ type: String }) title = 'PWA Starter';
 
   @property({ type: Boolean}) enableBack: boolean = false;
 
@@ -14,7 +14,7 @@ export class AppHeader extends LitElement {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: var(--first-color);
+        background: var(--background-color);
         color: white;
         height: 4em;
         padding-left: 16px;
